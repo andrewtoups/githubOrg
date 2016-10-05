@@ -41,14 +41,15 @@ button {
     height: 90px;
     margin: 10px;
     border-radius: 7px; }
-
-span {
-  font-size: 3em;
-  font-family: helvetica;
-  color: #aaaaaa;
-  text-shadow: 1px 1px white;
-  -webkit-font-smoothing: antialiased;
-  line-height: 110px;
-  vertical-align: top; }
+  .org-container span {
+    font-size: 3em;
+    font-family: helvetica;
+    color: #aaaaaa;
+    text-shadow: 1px 1px white;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    line-height: 110px;
+    vertical-align: top; }
 
 /*# sourceMappingURL=main.css.map */
