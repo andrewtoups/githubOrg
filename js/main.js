@@ -6,9 +6,9 @@ button.click(function(){
 });
 
 function handleError(errorObject, textStatus, error) {
-  var errorMsg = $('<div>').attr('class', 'org-container');
-  errorMsg = errorMsg.text('"' +textStatus+ ": " +error+ '"');
-  $(errorMsg).appendTo('.container');
+  var errorContainer = $('<div>').attr('class', 'org-container').css('text-align', 'center');
+  var errorMsg = $('<span>').text('"' +textStatus+ ": " +error+ '"').appendTo(errorContainer);
+  $(errorContainer).appendTo('.container');
   console.log(errorObject, textStatus, error);
 }
 
